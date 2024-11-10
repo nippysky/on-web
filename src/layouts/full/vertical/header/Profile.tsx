@@ -2,22 +2,12 @@
 // @ts-ignore
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import {
-  Box,
-  Menu,
-  Avatar,
-  Typography,
-  Divider,
-  Button,
-  IconButton,
-  Stack
-} from '@mui/material';
+import { Box, Menu, Avatar, Typography, Divider, IconButton, Stack } from '@mui/material';
 import * as dropdownData from './data';
 
 import { IconMail } from '@tabler/icons-react';
 
 import ProfileImg from 'src/assets/images/profile/user-1.jpg';
-import unlimitedImg from 'src/assets/images/backgrounds/unlimited-bg.png';
 
 const Profile = () => {
   const [anchorEl2, setAnchorEl2] = useState(null);
@@ -78,7 +68,7 @@ const Profile = () => {
               Mathew Anderson
             </Typography>
             <Typography variant="subtitle2" color="textSecondary">
-            Designer
+              Designer
             </Typography>
             <Typography
               variant="subtitle2"
@@ -145,25 +135,6 @@ const Profile = () => {
             </Box>
           </Box>
         ))}
-        <Box mt={2}>
-          <Box bgcolor="primary.light" p={3} mb={3} overflow="hidden" position="relative">
-            <Box display="flex" justifyContent="space-between">
-              <Box>
-                <Typography variant="h5" mb={2}>
-                  Unlimited <br />
-                  Access
-                </Typography>
-                <Button variant="contained" color="primary">
-                  Upgrade
-                </Button>
-              </Box>
-              <img src={unlimitedImg} alt="unlimited" className="signup-bg"></img>
-            </Box>
-          </Box>
-          <Button to="/auth/login" variant="outlined" color="primary" component={Link} fullWidth>
-            Logout
-          </Button>
-        </Box>
       </Menu>
     </Box>
   );

@@ -7,6 +7,7 @@ import Notifications from './Notification';
 import Profile from './Profile';
 
 import { AppState } from 'src/store/Store';
+import HelpSupport from './HelpSupport';
 
 const Header = () => {
   const lgUp = useMediaQuery((theme: any) => theme.breakpoints.up('lg'));
@@ -44,7 +45,8 @@ const Header = () => {
         </IconButton>
 
         <Box flexGrow={1} />
-        <Stack spacing={1} direction="row" alignItems="center">
+        <Stack spacing={2} direction="row" alignItems="center">
+          <HelpSupport />
           <Notifications />
           <Profile />
         </Stack>

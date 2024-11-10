@@ -22,7 +22,6 @@ import {
   IconMilitaryRank,
   IconWallet,
   IconUser,
-  IconHelp,
   IconSettings,
 } from '@tabler/icons-react';
 
@@ -136,13 +135,6 @@ const Menuitems: MenuitemsType[] = [
         href: '/dashboards/settings/change-password',
       },
     ],
-  },
-
-  {
-    id: uniqueId(),
-    title: 'Support',
-    icon: IconHelp,
-    href: '/dashboards/fill-form',
   },
 ];
 
