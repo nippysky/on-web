@@ -15,7 +15,7 @@ import {
 import { IconPhone, IconMoneybag } from '@tabler/icons-react';
 import CustomFormLabel from 'src/components/forms/theme-elements/CustomFormLabel';
 import CustomOutlinedInput from 'src/components/forms/theme-elements/CustomOutlinedInput';
-import PageContainer from 'src/components/PageContainer';
+import PageContainer from 'src/components/container/PageContainer';
 import DashboardCard from 'src/components/shared/DashboardCard';
 import { useState, useRef } from 'react';
 

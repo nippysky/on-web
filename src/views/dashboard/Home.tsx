@@ -4,9 +4,10 @@
 import React from 'react';
 import { Box, Grid } from '@mui/material';
 import WalletContainer from 'src/components/home/WalletContainer';
-import PageContainer from 'src/components/PageContainer';
+
 import RecentTxns from 'src/components/home/RecentTxns';
 import QuickServices from 'src/components/home/QuickServices';
+import PageContainer from 'src/components/container/PageContainer';
 
 const Home = () => {
   return (

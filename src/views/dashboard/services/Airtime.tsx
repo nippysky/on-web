@@ -13,7 +13,6 @@ import {
 import { IconPhone, IconMoneybag } from '@tabler/icons-react';
 import CustomFormLabel from 'src/components/forms/theme-elements/CustomFormLabel';
 import CustomOutlinedInput from 'src/components/forms/theme-elements/CustomOutlinedInput';
-import PageContainer from 'src/components/PageContainer';
 import DashboardCard from 'src/components/shared/DashboardCard';
 import { NetworkOption } from 'src/types/services';
 
@@ -22,6 +21,7 @@ import Airtel from '../../../assets/images/brand/services/Airtel.png';
 import GLO from '../../../assets/images/brand/services/Glo.png';
 import NINE from '../../../assets/images/brand/services/Nine.png';
 import { useState, useRef } from 'react';
+import PageContainer from 'src/components/container/PageContainer';
 
 const networkOptions: NetworkOption[] = [
   { name: 'MTN', icon: MTN },

@@ -1,6 +1,6 @@
 import { Box } from '@mui/material';
 import RecentTxns from 'src/components/home/RecentTxns';
-import PageContainer from 'src/components/PageContainer';
+import PageContainer from 'src/components/container/PageContainer';
 
 export default function TransactionHistory() {
   return (

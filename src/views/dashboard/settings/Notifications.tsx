@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Typography, FormControlLabel, Switch, Box, Grid, Stack } from '@mui/material';
-import PageContainer from 'src/components/PageContainer';
 import DashboardCard from 'src/components/shared/DashboardCard';
+import PageContainer from 'src/components/container/PageContainer';
 
 function Notifications() {
   const [appNotification, setAppNotification] = React.useState(true);
