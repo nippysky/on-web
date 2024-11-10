@@ -17,7 +17,7 @@ const Home = () => {
             <WalletContainer />
 
             <Box marginTop={5}>
-              <RecentTxns />
+              <RecentTxns title={'Recent Trnasactions'} actionType={'view'} sliceNumber={5} />
             </Box>
           </Grid>
           <Grid item xs={12} md={4}>

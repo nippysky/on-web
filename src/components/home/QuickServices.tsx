@@ -4,6 +4,7 @@
 import { Box, Stack, Typography } from '@mui/material';
 import DashboardCard from '../shared/DashboardCard';
 import { IconChevronRight } from '@tabler/icons-react';
+import { useNavigate } from 'react-router-dom'; // for navigation
 
 import Airtime from '../../assets/images/brand/Airtime.svg';
 import Data from '../../assets/images/brand/Data.svg';
@@ -16,43 +17,46 @@ const serviceData = [
   {
     name: 'Airtime',
     desc: 'Buy Airtime',
-    path: '/',
+    path: '/dashboards/services/airtime',
     icon: Airtime,
   },
   {
     name: 'Data',
     desc: 'Buy Data',
-    path: '/',
+    path: '/dashboards/services/data-bundle',
     icon: Data,
   },
   {
     name: 'Betting',
     desc: 'Fund your betting wallet',
-    path: '/',
+    path: '/dashboards/services/betting',
     icon: Betting,
   },
   {
     name: 'Education',
     desc: 'Buy A Scratch Card',
-    path: '/',
+    path: '/dashboards/services/education',
     icon: Education,
   },
   {
     name: 'Electricity',
     desc: 'Electricity is important',
-    path: '/',
+    path: '/dashboards/services/electricity',
     icon: Electricity,
   },
   {
     name: 'Cable TV',
     desc: 'Renew Your Cable Subscription',
-    path: '/',
+    path: '/dashboards/services/cable-tv',
     icon: CableTV,
   },
 ];
 
 const QuickServices = () => {
-  const handleServiceClick = () => {};
+  const navigate = useNavigate(); // Initialize useNavigate for navigation
+  const handleServiceClick = (path: string) => {
+    navigate(path);
+  };
 
   return (
     <DashboardCard title="Quick Services">
@@ -65,7 +69,7 @@ const QuickServices = () => {
                 width: '100%',
                 cursor: 'pointer',
               }}
-              onClick={handleServiceClick}
+              onClick={() => handleServiceClick(service.path)}
             >
               <Stack
                 spacing={3}
